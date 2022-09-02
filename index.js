@@ -31,7 +31,7 @@ passport.use(
     secret: "ZWIyODRiNTUtNWU0Zi00MjM2LWFhMmYtZWIzZjVmMzc3ZmMw",
     oauthServerUrl:
       "https://us-south.appid.test.cloud.ibm.com/oauth/v4/f8e78439-5478-4281-ade4-36aa0a7b0bec",
-    redirectUri: "/appid/callback",
+    redirectUri: "https://saas-ui-dashboard.vercel.app/appid/callback",
   })
 );
 
