@@ -87,9 +87,9 @@ app.get(
     var decoded = jwt_decode(token);
     const isAdmin = decoded.roles.includes("admin");
     if (isAdmin) {
-      res.send("Admin");
+      res.send("<h1>Welcome, You are allowed to view this App.</h1>");
     } else {
-      res.send("Not Admin");
+      res.send("<h1>Please ask admin for accessing the App</h1>");
     }
   }
 );
