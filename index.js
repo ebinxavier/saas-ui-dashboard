@@ -79,12 +79,6 @@ app.get("/api/user", (req, res) => {
 // Serve static resources
 app.use(express.static("./public"));
 
-// Start server
-const port = process.env.PORT;
-app.listen(port, () => {
-  console.log(`Listening on ${port}`);
-});
-
 app.get(
   "/test",
   passport.authenticate(WebAppStrategy.STRATEGY_NAME),
@@ -99,3 +93,11 @@ app.get(
     }
   }
 );
+
+// Start server
+// const port = process.env.PORT;
+// app.listen(port, () => {
+//   console.log(`Listening on ${port}`);
+// });
+
+module.exports = app;
